@@ -38,5 +38,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simpleci:latest
-#          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simpleci:buildcache
-#          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simpleci:buildcache,mode=max
+          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simpleci:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/simpleci:buildcache,mode=max
